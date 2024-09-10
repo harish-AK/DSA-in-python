@@ -1,7 +1,7 @@
 # DSA-in-python
 
 
-## Array operations and algorithms
+## Array operations and algorithms - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Array%20operations)
 Array operations are - insertion ,deletion, update, searching (linear, binary), sorting (bubble, selection, insertion, merge, quick, heap, counting, radix, bucket ), two pointer algorithm, sliding window 
 ### Algorithms:
   1. Two pointer
