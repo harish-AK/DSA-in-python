@@ -11,7 +11,7 @@ Array operations are - insertion ,deletion, update, searching (linear, binary), 
 ## Hashmap - an dictionary{}
 
 
-## Linked list
+## Linked list - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Linked%20list)
 Linked is a collection of data (node) where each node contains an value and a reference to next node. Last node is pointed to null.
 Allocate memory one by one.
 contiguous data structure - single section of memory block will be allocated.
@@ -23,7 +23,7 @@ contiguous data structure - single section of memory block will be allocated.
   1. Slow fast
 
 
-## Stack
+## Stack - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Stack)
 It is an linear data structure which uses LIFO and FIFO
 ### functions
 **empty()** - returns True if stack is empty else False - O(1)
@@ -50,7 +50,7 @@ It is an linear data structure which uses LIFO and FIFO
   	  pop the element and insert the current element.
   at end monotonic decreasing stack will be formed.
 
-## Queue
+## Queue - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Queue)
 Queue follows FIFO manner. add and remove elements at the same time.
 
 ### Operations
@@ -91,7 +91,7 @@ to pop an element we do heapify  - heappop() whose time complexity is O(logn). c
 Max heap - root will be bigger than its parent.
 heapq module only supports min heap to make it as an max heap we need an -heap
 
-## Searching techniques
+## Searching techniques - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Searching)
   1. Linear search
   2. Binary search
 ### Linear search
@@ -117,7 +117,9 @@ heapq module only supports min heap to make it as an max heap we need an -heap
   		high = mid-1
   	elif arr[mid] < tar:
   		low = mid + 1
-## Sorting techniques
+
+
+## Sorting techniques - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Sorting)
 Bubble sort
 
 Lets take an array like arr = [3 , 2, 6, 9, -2, 1, 0, -9]
@@ -194,7 +196,8 @@ Space complexity - O(k)**
 arr.sort() - O(n log n)
 sorted(arr) - O(n)
 
-## Tree
+
+## Tree - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Tree)
 Binary tree
 Each parent node will have  at most 2 children, 
 perfect tree - all nodes will have exact 2 children.
@@ -221,9 +224,6 @@ post order traversal for above binary tree is [4,5,2,10,3,1]
 
 ## BFS - Breath first search uses queue
 Top to bottom
-
-### Level order traversal
-![[Pasted image 20240812205623.png]]
 
 ### Check whether an element is present or not
 ## DFS - stack
@@ -276,8 +276,7 @@ BFS will be suitable for solutions that are closer to source.
 
 ` #curr will move to left 3 which will add to stack so st becomes [2,3], then 3's left is none so pop 3 (st = [2]) and add 3 in out, out becomes [1,3], now curr.right which means 3's right is also none so pop 2 nd add it in out, out = [1,3,2] and st = []/
 
-## Recursion
-![[Pasted image 20240811201747.png]]
+## Recursion - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/recursion)
 
 Order of execution - first f(n-1) will complete then it will go for f(n-2). 
 
