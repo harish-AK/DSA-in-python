@@ -296,10 +296,8 @@ recursion - a function that call itself.
 4. Undo decisions.
 
 Function will keep on divide the elements when it hits null (returns a value ) the called function will be popped.
-![[Pasted image 20240909212323.png]]
 
 Lets take a problem like print all the subsets in a array = [1,2,3].
-![[Pasted image 20240903190428.png]]
 
 This is how recursive backtracking works. 
 Uses DFS (left, root, right).
