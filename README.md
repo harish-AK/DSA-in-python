@@ -1,4 +1,6 @@
-# DSA-in-python
+# DSA-in-python 
+
+## DSA in Leetcode problems (a complete roadmap) is [here](https://github.com/harish-AK/DSA-roadmap/blob/main/AlGORITHM%20MAP.ipynb)  
 
 
 ## Array operations and algorithms - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Array%20operations)
