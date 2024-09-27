@@ -60,26 +60,27 @@ Queue follows FIFO manner. add and remove elements at the same time.
 	2. **dequeue()** - removes first element from the queue - O(1)
 	3. **front()** - returns the front element of the queue (first element) - O(1)
 	4. **rear()** - returns the rear element of the queue (last element) - O(1)
-
-  `from collections import deque
-  `q = [ 1, 2, 3, 4 ]
-  `q.popleft() # will pop 1
+	 
   
-  `from queue import Queue
-  `q = Queue(maxsize = 3)
-  `q.put(1) - insert an element
-  `q.get() - pop the first element
-  `q.isempty() - returns True if queue is empty else False
-  `q.full()  - returns True if queue is full else Fasle
+	  `from collections import deque
+	  `q = [ 1, 2, 3, 4 ]
+	  `q.popleft() # will pop 1
+	  
+	  `from queue import Queue
+	  `q = Queue(maxsize = 3)
+	  `q.put(1) - insert an element
+	  `q.get() - pop the first element
+	  `q.isempty() - returns True if queue is empty else False
+	  `q.full()  - returns True if queue is full else Fasle
   
 ### Monotonic increasing and decreasing queue
 
-index  v                  Increasing queue                              Decreasing queue  
-1         5                         [5] [5]  
-2         3                        [3] 3 kick out 5                                [5, 3] #3->5  
-3         1                        [1] 1 kick out 3                                [5, 3, 1] #1->3  
-4         2                        [1, 2] #2->1                                 [5, 3, 2] 2 kick out 1 #2->3  
-5         4                         1, 2, 4] #4->2                             [5,4] 4 kick out 2, 3 #4->2
+	index     v                      Increasing queue                              Decreasing queue  
+	1         5                         [5] [5]  
+	2         3                        [3] 3 kick out 5                                [5, 3] #3->5  
+	3         1                        [1] 1 kick out 3                                [5, 3, 1] #1->3  
+	4         2                        [1, 2] #2->1                                 [5, 3, 2] 2 kick out 1 #2->3  
+	5         4                         1, 2, 4] #4->2                             [5,4] 4 kick out 2, 3 #4->2
 
 
 ## Priority queue
@@ -111,14 +112,14 @@ heapq module only supports min heap to make it as an max heap we need an -heap
   if the mid is greater than the target search will be on left part. if mid is smaller than target search will be on right half.
   This process will continue till the target element is found.
   
-  high = len(arr) - 1
-  low = 0
-  while high >= low:
-  	mid = low+(high-low)//2
-  	if arr[mid] > tar:
-  		high = mid-1
-  	elif arr[mid] < tar:
-  		low = mid + 1
+	  high = len(arr) - 1
+	  low = 0
+	  while high >= low:
+	  	mid = low+(high-low)//2
+	  	if arr[mid] > tar:
+	  		high = mid-1
+	  	elif arr[mid] < tar:
+	  		low = mid + 1
 
 
 ## Sorting techniques - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Sorting)
@@ -179,8 +180,8 @@ if arr = [5,3,2,1, 3, 3,7,2,2], new array = [0,0,0,0,0,0,0,0] - max is 7 , 7+1, 
 Basically iterate through the array with i.
 the new array will be used to count the each element.
 
-array = [0, 0, 0, 0, 0, 0, 0, 0]
-   pos = 0, 1, 2, 3, 4, 5, 6, 7
+	array = [0, 0, 0, 0, 0, 0, 0, 0]
+	   pos = 0, 1, 2, 3, 4, 5, 6, 7
  
 first element is 5 so increment 5th index by 1, array =[0,0,0,0,0,1,0,0]
 next element is 3 so increment 3rd index by 1, array =[0,0,0,1,0,1,0,0] and so on.
@@ -260,19 +261,19 @@ BFS will be suitable for solutions that are closer to source.
 
 ### DFS in-order traversal using stack
 
-`root = [1, null, 2, 3]
-`out = []
-`st = []
-`curr = root # which is 1
-`while curr or st:
-	`while curr:
-		`st.append(curr) 
-		`curr = curr.left
-		`# now the stack becomes [1]
-	`#curr = None because null in left if node 1
-`	 curr = st.pop() # stack will become empty 
-`	 out.append(curr.val) # poped value will be added to out list out = [1]
-`     curr = curr.right  # then curr will move to right which is 2
+	`root = [1, null, 2, 3]
+	`out = []
+	`st = []
+	`curr = root # which is 1
+	`while curr or st:
+		`while curr:
+			`st.append(curr) 
+			`curr = curr.left
+			`# now the stack becomes [1]
+		`#curr = None because null in left if node 1
+	`	 curr = st.pop() # stack will become empty 
+	`	 out.append(curr.val) # poped value will be added to out list out = [1]
+	`     curr = curr.right  # then curr will move to right which is 2
 
 ` #now condition is curr is not none so it will enter into 1st while same condition for inner while loop then 2 will add in the stack so st = [2], 
 
