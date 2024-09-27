@@ -28,12 +28,12 @@ contiguous data structure - single section of memory block will be allocated.
 ## Stack - [here](https://github.com/harish-AK/DSA-in-python/tree/main/DSA%20in%20PYTHON/Stack)
 It is an linear data structure which uses LIFO and FIFO
 ### functions
-**empty()** - returns True if stack is empty else False - O(1)
-**size()** - returns size of stack - O(1)
-**top()** - top most value in the stack (last value in the array) - O(1)
-**push(a)** - insert an element at last (top) - O(1)
-**pop()** - deleted the top most element in the stack - O(1)
-**peek()** - get the top most element without deleting it.
+	1. **empty()** - returns True if stack is empty else False - O(1)
+	2. **size()** - returns size of stack - O(1)
+	3. **top()** - top most value in the stack (last value in the array) - O(1)
+	4. **push(a)** - insert an element at last (top) - O(1)
+	5. **pop()** - deleted the top most element in the stack - O(1)
+	6. **peek()** - get the top most element without deleting it.
 
 ### Types
   ### Monotonic increasing stack
@@ -56,10 +56,10 @@ It is an linear data structure which uses LIFO and FIFO
 Queue follows FIFO manner. add and remove elements at the same time.
 
 ### Operations
-**enqueue()** - add an element to queue if queue is full returns queue overflow condition - O(1)
-**dequeue()** - removes first element from the queue - O(1)
-**front()** - returns the front element of the queue (first element) - O(1)
-**rear()** - returns the rear element of the queue (last element) - O(1)
+	1. **enqueue()** - add an element to queue if queue is full returns queue overflow condition - O(1)
+	2. **dequeue()** - removes first element from the queue - O(1)
+	3. **front()** - returns the front element of the queue (first element) - O(1)
+	4. **rear()** - returns the rear element of the queue (last element) - O(1)
 
   `from collections import deque
   `q = [ 1, 2, 3, 4 ]
